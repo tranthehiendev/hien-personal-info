@@ -39,7 +39,7 @@
     box-shadow: 0px 2px 4px hsla(233, 45%, 20%, 0.1);
 
     &:nth-child(1) {
-        background: url(../../assets/info_icon.png) no-repeat center/cover;
+        background: url(../../assets/coder.webp) no-repeat center/cover;
     }
 
     &:nth-child(2) {
@@ -207,9 +207,6 @@
         }
     }
      &:nth-child(4){
-        background: url(../../assets/info_icon.png) center/cover no-repeat;
-        &:hover{
-            background: url(../../assets/avatar.jpg) center/cover no-repeat;
-        }
+        background: url(../../assets/skills2.jpg) center/cover no-repeat;
      }
 }
