@@ -201,4 +201,137 @@ table {
   --caption-font-size: 0.875rem;
   /* 16px */
   --caption-line-height: 1rem;
+  --button-bg: var(--p-950);
+  --button-text: var(--foreground-color);
+}
+
+body {
+  color: var(--p-950);
+}
+
+.dark-mode {
+  --foreground-color: hsl(233, 25%, 12%);
+  --p-20: hsl(233, 25%, 85%);
+  --p-50: hsl(233, 25%, 80%);
+  --p-100: hsl(233, 25%, 75%);
+  --p-100-code: 233, 25%, 75%;
+  --p-200: hsl(233, 25%, 70%);
+  --p-300: hsl(233, 25%, 65%);
+  --p-400: hsl(233, 25%, 60%);
+  --p-450: hsl(198, 81%, 63%);
+  --p-500: hsl(228, 81%, 65%);
+  --p-500-code: 228, 81%, 65%;
+  --p-600: hsl(233, 73%, 62%);
+  --p-600-code: 233, 73%, 62%;
+  --p-700: hsl(234, 56%, 55%);
+  --p-700-code: 234, 56%, 55%;
+  --p-800: hsl(233, 53%, 48%);
+  --p-900: hsl(231, 46%, 58%);
+  --p-900-code: 231, 46%, 58%;
+  --p-950: hsl(210, 15%, 92%);
+  --p-950-code: 210, 15%, 92%;
+  --n-50: hsl(210, 14%, 20%);
+  --n-500: hsl(215, 16%, 65%);
+  --n-600: hsl(215, 16%, 72%);
+  --main-gradient-color: linear-gradient(to right, hsl(228, 81%, 65%), hsl(228, 73%, 62%));
+  --gradient-color: linear-gradient(var(--foreground-color) 10%, hsl(233, 25%, 18%));
+  --button-bg: hsl(228, 73%, 59%);
+  --button-text: hsl(233, 25%, 12%);
+}
+
+body.dark-mode,
+body.dark-mode header,
+body.dark-mode section,
+body.dark-mode footer,
+body.dark-mode .project__cards,
+body.dark-mode .aboutMe__content_container,
+body.dark-mode .skills__grid_item {
+  color: var(--p-950);
+}
+
+body.dark-mode {
+  background-color: hsl(233, 25%, 12%);
+  background-image: none;
+  color: hsl(210, 15%, 92%);
+}
+
+.dark-mode .header__container {
+  background-color: hsl(233, 25%, 12%);
+  border-color: transparent;
+  color: hsl(210, 15%, 92%);
+}
+
+.dark-mode .aboutMe__container,
+.dark-mode .aboutMe__content_container,
+.dark-mode .project__cards,
+.dark-mode .skills__grid_item {
+  background-color: hsl(233, 20%, 16%);
+  border-color: hsl(233, 25%, 25%);
+  color: hsl(210, 15%, 92%);
+}
+
+.dark-mode header {
+  background-color: transparent;
+}
+
+.dark-mode .header__colum--left .badge {
+  background-color: hsl(233, 25%, 22%);
+  color: hsl(210, 15%, 92%);
+}
+
+.dark-mode .header__container p,
+.dark-mode .header__container span,
+.dark-mode .section__description,
+.dark-mode .section__title,
+.dark-mode .project__cards_title h4,
+.dark-mode .project__cards_title h3,
+.dark-mode .skills__grid_item_header h2,
+.dark-mode .skills__grid_item_header p,
+.dark-mode .aboutMe__content_container h1,
+.dark-mode .aboutMe__content_container p,
+.dark-mode .footer p {
+  color: hsl(210, 15%, 92%);
+}
+
+.dark-mode .project__cards {
+  border-color: hsl(233, 25%, 25%);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.dark-mode .project__cards_wrapper {
+  background: hsl(228, 60%, 22%);
+}
+
+.dark-mode .skills__grid_item {
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .icon-badges:nth-child(even) {
+  background: var(--main-gradient-color);
+  color: hsl(233, 25%, 12%);
+}
+
+.dark-mode .icon-badges:nth-child(odd) {
+  background: hsl(233, 25%, 22%);
+  border-color: hsl(233, 25%, 35%);
+  color: hsl(210, 15%, 92%);
+}
+
+.dark-mode .softSkills_badge {
+  background-color: hsl(233, 25%, 22%);
+  border-color: hsl(233, 25%, 35%);
+  color: hsl(210, 15%, 92%);
+}
+
+.dark-mode .softSkills_badge p {
+  color: hsl(210, 15%, 92%);
+}
+
+.dark-mode .theme-toggle {
+  background-color: hsl(233, 25%, 22%);
+  border-color: hsl(233, 25%, 35%);
+}
+
+.dark-mode .theme-toggle__thumb {
+  background-color: hsl(228, 73%, 59%);
 }
