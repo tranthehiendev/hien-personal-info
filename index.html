@@ -412,6 +412,32 @@
             <p>© 2025 -  Hien's</p>
         </div>
      </footer>
+    <script>
+        (function () {
+            const THEME_KEY = 'preferredTheme';
+            const themeToggle = document.getElementById('themeToggle');
+            const hour = new Date().getHours();
+            const isNightTime = hour >= 18 || hour < 6;
+            const savedTheme = localStorage.getItem(THEME_KEY);
+            const isDark = savedTheme ? savedTheme === 'dark' : isNightTime;
+
+            function applyTheme(dark) {
+                document.body.classList.toggle('dark-mode', dark);
+                if (themeToggle) {
+                    themeToggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+                }
+                localStorage.setItem(THEME_KEY, dark ? 'dark' : 'light');
+            }
+
+            applyTheme(isDark);
+
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function () {
+                    applyTheme(!document.body.classList.contains('dark-mode'));
+                });
+            }
+        })();
+    </script>
 </body>
 
 </html>
